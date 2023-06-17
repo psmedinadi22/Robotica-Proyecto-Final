@@ -1,14 +1,16 @@
 # Robótica- Proyecto Final
 
+El siguiente informe muestra el desarrollo de un sistema robotizado para la automatización del proceso de Pick & Place y alistamiento de pedidos.
+
 > ## Integrantes
 > 
 > - [Camilo Andrés Borda Gil](https://github.com/Canborda) (caabordagi@unal.edu.co)
 > - [Paula Sofía Medina Diaz](https://github.com/psmedinadi22) (psmedinadi@unal.edu.co)
 > - Robinson Jair Orduxz Gomez (rjorduzg@unal.edu.co)
 
-Diseño de herramienta porta ventosa
+Desarrollo de herramienta multi-proposito
 -------
-
+Se debe diseño, construyó e instaló una herramienta personalizada que con varias ventosas para el proceso  de Pick & Place.
 
 Rutina Pick and Place en RobotStudio
 -----
@@ -20,6 +22,7 @@ EL código implementado se encuentra en la carpeta RAPID, a continuación se rea
 
 ## Main
 
+```
     PROC main()
         WaitDI DI_01,1;   !Espera entrada activación digital 
         Ensamble1;        !Empieza rutina de peak and place
@@ -38,9 +41,11 @@ EL código implementado se encuentra en la carpeta RAPID, a continuación se rea
         Path_Place5;
         Path_home;        !Va a la posicion de home
     ENDPROC
+```
 
 ## Pick
 
+```
     PROC Path_Pick1()
         MoveJ Target_30,v200,z0,T_ventosa\WObj:=WO_Peak;   !movimiento articular para de posicionamiento
         MoveL Target_20,v200,z0,T_ventosa\WObj:=WO_Peak;   !movimiento lineal para acercamiento
@@ -52,6 +57,7 @@ EL código implementado se encuentra en la carpeta RAPID, a continuación se rea
         MoveL Target_20,v200,z0,T_ventosa\WObj:=WO_Peak;   !movimiento lineal intermedio para alejarse
         MoveL Target_30,v200,z0,T_ventosa\WObj:=WO_Peak;   !movimiento lineal final 
    ENDPROC
+```
 
 ## Place
 
@@ -91,7 +97,7 @@ Para el desarrollo de este proyecto se inició verificando la conexión neumáti
 ---
 # Referencias
 
-- Laboratorio 5 - Cinemática Inversa - Robot Phantom X - ROS
+- Guia proyecto final Róbotica 2023-1
 - Apuntes de clase, Robótica 2023-1
 
 ---
