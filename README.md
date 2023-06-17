@@ -97,7 +97,9 @@ Para el desarrollo de este proyecto se inició verificando la conexión neumáti
 ---
 # Referencias
 
-- Guia proyecto final Róbotica 2023-1
+- Ramírez, R. y Rodríguez, J. (2022). Guías de Robot Studio. Universidad Nacional de Colombia.
+- Cárdenas, P. y Ramírez, R. (2020). Robótica - Proyecto Final. Universidad Nacional de Colombia.
+- Spong, M. Hutchinson, S. y Vidyasagar, M. (2006). Robot modeling and control. John Wiley & Sons, Inc
 - Apuntes de clase, Robótica 2023-1
 
 ---
