@@ -80,12 +80,6 @@ Rutina Pick and Place en RobotStudio
 Con los espacios de trabajo ubicados, se empieza aproximando el robot mediante desplazamientos articulares a cada posición de pick para evitar que la muñeca realice movimiento singulares, esta orientación se replica en el espacio de trabajo del place y mediante rotaciones alrededor del eje z se cambia la orientación de algunas piezas como se evidencia en el siguiente video. Cabe resaltar que para esta rutina se utilizo un z igual a 0 pues se requería precisión en la rutina, ademas se usó una velocidad de 200 mm/s y una aproximación al espacio de trabajo de place de 30 mm de modo que se garantice que ninguna pieza toque los tornillos de ensamble del gripper. En cuanto a las señales para activar y desactivar la ventosa, se crearon 2 salidas digitales DO_01 y DO_02 y se incorporaron en la trayectoria de cada pieza; asi mismo se agrego la entrada digital DI_01 para iniciar la rutina al presionar un botón en el tablero decontrol y se garantiza inicie y termine en la posición de home.
 
 
-https://github.com/psmedinadi22/Robotica-Proyecto-Final/assets/64180738/14d0e0d4-9b5f-43a9-8223-c6ba8695b600
-
-
-
-https://github.com/psmedinadi22/Robotica-Proyecto-Final/assets/64180738/a5c007e5-a015-45fd-8f0b-f71c1b167a31
-
 
 
 https://github.com/psmedinadi22/Robotica-Proyecto-Final/assets/64180738/22546b57-1176-4821-b877-ec6715cfeffd
