@@ -11,6 +11,8 @@ Desarrollo de herramienta multi-proposito
 -------
 Se debe diseño, construyó e instaló una herramienta personalizada que con varias ventosas para el proceso  de Pick & Place.
 
+<p align="center"><img height=500 src="./Multimedia/tool.png" alt="Access to I/O system" /></p>
+
 
 Código RAPID
 -----------------------
