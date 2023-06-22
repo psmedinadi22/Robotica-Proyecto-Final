@@ -13,7 +13,7 @@ Se debe diseño, construyó e instaló una herramienta personalizada que con var
 
 <p align="center"><img height=500 src="./Multimedia/tool.png" alt="Access to I/O system" /></p>
 
-A partir de las dimensiones de las ventosas y acoples dispuestos en el laboratorio y de la brida para herramientas del manipulador IRB 140 se diseño el porta ventosa tal que se adaptase a cada uno de estos elementos. Los archivos de fabricación se pueden ver en la carpeta de planos.
+A partir de las dimensiones de las ventosas y acoples dispuestos en el laboratorio y de la brida para herramientas del manipulador IRB 140 se diseño el porta ventosa tal que se adaptase a cada uno de estos elementos. Los archivos de fabricación se pueden ver en la carpeta de Models.
 
 Código RAPID
 -----------------------
