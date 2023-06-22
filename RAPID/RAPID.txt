@@ -1,1 +1,234 @@
+MODULE Module1
+        CONST robtarget home:=[[601.381996262,-131.119,656.275308877],[0.5,0,0.866025404,0],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget home2:=[[525.340909554,-49.061604669,524.568283237],[0.382088473,0.558592156,0.661796648,0.322503332],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget acercamientoBaldeBanda:=[[490,-400,365.279],[0.5,0.5,0.5,0.5],[-1,1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget engancheBaldeBanda:=[[715,-400,365.279],[0.5,0.5,0.5,0.5],[-1,1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget elevacionBaldeBanda:=[[715,-400,465.279],[0.5,0.5,0.5,0.5],[-1,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget baldeDesacarga:=[[590,-150,155],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget intermedio:=[[839.190304185,-303.181217729,471.465105024],[0.420867772,0.417882311,0.568759916,0.569874416],[-1,1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget baldeDescarga:=[[352.463735711,0,632.279],[0.5,0.5,0.5,0.5],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget acercamientoBaldeDescarga:=[[660,0,687.279],[0.5,0.5,0.5,0.5],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget preparacionFichas:=[[400,-46,585.5],[0.5,0.5,0.5,0.5],[-1,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fichaA:=[[640,373.75,335.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget homeFichas:=[[211.043527044,357.378947186,534.684920935],[0.02993012,0.098318331,0.676959786,0.7288094],[0,1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget inicioFichas:=[[69.267899472,238.394128588,557.346828758],[0.123416584,-0.181037539,0.552237051,0.804380504],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget finBalde:=[[520,593.75,365.5],[0.5,0.5,0.5,0.5],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget desengancheBalde:=[[710,0,637.279],[0.5,0.5,0.5,0.5],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantarfichaA:=[[390,373.75,365.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget descargaFichas:=[[655,0,645],[0.5,0.5,0.5,0.5],[0,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fichaB:=[[640,206,335.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantarFichaB:=[[440,206,385.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantaFichaC:=[[550,153.75,365.5],[0.5,0.5,0.5,0.5],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fichaC:=[[640,37.25,335.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantarFichaC:=[[440,37.25,485.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget HHomeFichas:=[[183.468483599,210.249354335,525.067234801],[0.02993012,0.098318331,0.676959786,0.7288094],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fichaD:=[[640,373.75,202.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantarFichaD:=[[440,373.75,302.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fichaE:=[[640,206,202.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantarFichaE:=[[440,206,302.5],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget fichaF:=[[640,373.75,65],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget levantarFichaF:=[[440,373.75,165],[0.5,0.5,0.5,0.5],[0,-2,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    VAR num ruta:=0;
+    !*********************
+    !
+    ! Módulo:  Module1
+    !
+    ! Descripción:
+    !   <Introduzca la descripción aquí>
+    !
+    ! Autor: robin
+    !
+    ! Versión: 1.0
+    !
+    !*********************
+    
+    
+    !*********************
+    !
+    ! Procedimiento Main
+    !
+    !   Este es el punto de entrada de su programa
+    !
+    !*********************
+    PROC main()
+        !Añada aquí su código
+    
+    WaitDI ruta_1,1;
+    ruta:=1;
+    
+    WaitDI ruta_2,1;
+    ruta:=2;
+    
+    WaitDI ruta_3,1;
+    ruta:=3;
+    
+    WaitDI ruta_4,1;
+    ruta:=4;
+    
+    IF ruta=1 THEN
+    SetDO luz,0;
+    trayectoria_1;
+    SetDO luz,1;    
+    ENDIF
+    
+    IF ruta=2 THEN
+    SetDO luz,0;
+    trayectoria_2;
+    SetDO luz,1;     
+    ENDIF
+   
+    IF ruta=3 THEN
+    SetDO luz,0;
+    trayectoria_3;
+    SetDO luz,1;    
+    ENDIF
+    
+    IF ruta=4 THEN
+    SetDO luz,0;
+    trayectoria_4;
+    SetDO luz,1;    
+    ENDIF
+    
+    !posicionBalde;
+        !agarrarFichaA;
+        !transportarFichaA;
+        !agarrarFichaB;
+        !transportarFichaB;
+        !agarrarFichaC;
+        !transportarFichaC;
+         !agarrarFichaD;
+        !transportarFichaD;
+         ! agarraFichaE;
+        !transportarFichaE;
+        !agarrarFichaF;
+        !transportarFichaF;
+    
+       
+       ! WaitDO vacio_on,1;
+       ! WaitDO vacio_on,0;
+       !WaitDO vacio_off,1;
+       ! WaitDO vacio_off,0;
+       ! WaitTime END_OF_LIST;
+        
+        
+    ENDPROC
+    PROC trayectoria_1()
+    posicionBalde; 
+    agarrarFichaA;
+    transportarFichaA;
+    agarrarFichaB;
+    transportarFichaB;
+    agarrarFichaC;
+    transportarFichaC;
+    MoveL home,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+     PROC trayectoria_2()
+    posicionBalde; 
+    agarrarFichaA;
+    transportarFichaA;
+    agarrarFichaB;
+    transportarFichaB;
+    agarrarFichaD;
+    transportarFichaD;
+    MoveL home,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC trayectoria_3()
+    posicionBalde; 
+    agarrarFichaA;
+    transportarFichaA;
+    agarrarFichaD;
+    transportarFichaD;
+    agarrarFichaF;
+    transportarFichaF;
+    MoveL home,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC trayectoria_4()
+    agarrarFichaC;
+    transportarFichaC;
+    agarraFichaE;
+    transportarFichaE;
+    agarrarFichaF;
+    transportarFichaF;
+    MoveL home,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC posicionBalde()
+        MoveL home,v100,z1,gancho\WObj:=wobj0;
+        MoveL home2,v100,z1,gancho\WObj:=wobj0;
+        MoveL acercamientoBaldeBanda,v100,z1,gancho\WObj:=wobj0;
+        MoveL engancheBaldeBanda,v100,z1,gancho\WObj:=wobj0;
+        MoveJ elevacionBaldeBanda,v100,z1,gancho\WObj:=wobj0;
+        MoveL acercamientoBaldeDescarga,v100,z1,gancho\WObj:=wobj0;
+        MoveL desengancheBalde,v100,z1,gancho\WObj:=wobj0;
+        MoveL baldeDescarga,v100,z1,gancho\WObj:=wobj0;
+    ENDPROC
 
+    PROC agarrarFichaA()
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ fichaA,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC transportarFichaA()
+        MoveL fichaA,v100,z1,ventosa\WObj:=wobj0;
+        MoveL levantarfichaA,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ descargaFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveL homeFichas,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC agarrarFichaB()
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ fichaB,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC transportarFichaB()
+        MoveL fichaB,v100,z1,ventosa\WObj:=wobj0;
+        MoveL levantarFichaB,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ descargaFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveL homeFichas,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC agarrarFichaC()
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ fichaC,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC transportarFichaC()
+        MoveL fichaC,v100,z1,ventosa\WObj:=wobj0;
+        MoveL levantarFichaC,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ HHomeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ descargaFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveL homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        
+    ENDPROC
+    PROC agarrarFichaD()
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ fichaD,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC transportarFichaD()
+        MoveL fichaD,v100,z1,ventosa\WObj:=wobj0;
+        MoveL levantarFichaD,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ descargaFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveL homeFichas,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC agarraFichaE()
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ fichaE,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC transportarFichaE()
+        MoveL fichaE,v100,z1,ventosa\WObj:=wobj0;
+        MoveL levantarFichaE,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ descargaFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveL homeFichas,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC agarrarFichaF()
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ fichaF,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    PROC transportarFichaF()
+        MoveL fichaF,v100,z1,ventosa\WObj:=wobj0;
+        MoveL levantarFichaF,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ homeFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveJ descargaFichas,v100,z1,ventosa\WObj:=wobj0;
+        MoveL homeFichas,v100,z1,ventosa\WObj:=wobj0;
+    ENDPROC
+    
+   
+ENDMODULE
