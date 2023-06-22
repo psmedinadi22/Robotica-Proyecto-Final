@@ -9,10 +9,11 @@ El siguiente informe muestra el desarrollo de un sistema robotizado para la auto
 
 Desarrollo de herramienta multi-proposito
 -------
-Se debe diseño, construyó e instaló una herramienta personalizada que con varias ventosas para el proceso  de Pick & Place.
+Se debe diseño, construyó e instaló una herramienta personalizada que con varias ventosas para el proceso  de Pick & Place. Esto se realizó partiendo de las especificaciones del producto del manipulador IRB 140, especificamente de las dimensiones de la brida para herramientas y las cuales se pueden ver a continuación
 
 <p align="center"><img height=500 src="./Multimedia/tool.png" alt="Access to I/O system" /></p>
 
+A partir de las dimensiones de las ventosas y acoples dispuestos en el laboratorio y de la brida para herramientas del manipulador IRB 140 se diseño el porta ventosa tal que se adaptase a cada uno de estos elementos. Los archivos de fabricación se pueden ver en la carpeta de planos.
 
 Código RAPID
 -----------------------
